@@ -102,6 +102,18 @@ let DetailedRoutesUP = [
     SHD[708],
     getStops(SHMB_KSR, "KACHEGUDA STATION", "ECIL X ROADS")
   ),
+  ["3D"].concat(
+    getStops(SHMB_KSR, "AFZALGUNJ", "NAGARAM"),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
+  ),
+  ["3DN"].concat(
+    getStops(SHMB_KSR, "AFZALGUNJ", "TARNAKA"),
+    getStops(LGPL_CRPL, "TARNAKA", "NOMA"),
+    getStops(SHMB_KSR, "HB COLONY", "NAGARAM"),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
+  ),
   ["3H"].concat(
     getStops(SHMB_KSR, "AFZALGUNJ", "VIDYA NAGAR"),
     SHD[43],
@@ -153,6 +165,15 @@ let DetailedRoutesUP = [
     SHD[898],
     getStops(DNGL_IBP, "ALUGADDA BHAVI", "METTUGUDA"),
     getStops(GWRL_HCLX, "NEW BRIDGE", "ECIL X ROADS")
+  ),
+  ["5K/16AD"].concat(
+    getStops(MNBD_SRPT, "MEHDIPATNAM", "SANGEETH"),
+    SHD[898],
+    getStops(DNGL_IBP, "ALUGADDA BHAVI", "METTUGUDA"),
+    getStops(GWRL_HCLX, "NEW BRIDGE", "ECIL X ROADS"),
+    getStops(SHMB_KSR, "KUSHAIGUDA", "NAGARAM"),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
   ),
   ["5K/92A"].concat(
     getStops(SRPT_MNBD, "SECUNDERABAD", "MEHDIPATNAM"),
@@ -241,6 +262,17 @@ let DetailedRoutesUP = [
     SHD[917],
     getStops(SHMB_KSR, "LALAPET", "KUSHAIGUDA")
   ),
+  ["15D"].concat(
+    SHD[898],
+    SHD[23],
+    SHD[622],
+    getStops(GWRL_HCLX, "NEW BRIDGE", "LALAGUDA"),
+    SHD[719],
+    SHD[917],
+    getStops(SHMB_KSR, "LALAPET", "NAGARAM"),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
+  ),
   ["15H/242RG"].concat(
     SHD[898],
     SHD[23],
@@ -268,6 +300,14 @@ let DetailedRoutesUP = [
     getStops(IBP_DNGL, "METTUGUDA", "CHILKALGUDA X ROADS"),
     getStops(CRPL_LGPL, "SECUNDERABAD", "MEHDIPATNAM")
   ),
+  ["16AD/5K"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, 'NAGARAM', 'KUSHAIGUDA'),
+    getStops(HCLX_GWRL, "ECIL X ROADS", "NEW BRIDGE"),
+    getStops(IBP_DNGL, "METTUGUDA", "CHILKALGUDA X ROADS"),
+    getStops(SRPT_MNBD, "SECUNDERABAD", "MEHDIPATNAM")
+  ),
   ["16H"].concat(
     SHD[898],
     SHD[23],
@@ -284,6 +324,18 @@ let DetailedRoutesUP = [
   ),
 
   // 17 SERIES
+  ["17DH"].concat(
+    SHD[898],
+    getStops(DNGL_IBP, "ALUGADDA BHAVI", "TARNAKA"),
+    getStops(SHMB_KSR, "WHITE HOUSE", "NAGARAM"),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'BALAJI NAGAR')
+  ),
+  ["17DS"].concat(
+    getStops(HCLX_GWRL, "SECUNDERABAD", "SITAFALMANDI X ROADS"),
+    SHD[641],
+    getStops(SHMB_KSR, "TARNAKA", "NAGARAM"),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'BALAJI NAGAR')
+  ),
   ["17H"].concat(
     SHD[898],
     getStops(DNGL_IBP, "ALUGADDA BHAVI", "TARNAKA"),
@@ -315,6 +367,34 @@ let DetailedRoutesUP = [
     getStops(HCLX_GWRL, "SECUNDERABAD", "SITAFALMANDI X ROADS"),
     SHD[641],
     getStops(SHMB_KSR, "TARNAKA", "KUSHAIGUDA")
+  ),
+
+  // 22 SERIES
+  ["22"].concat(
+    getStops(MNBD_SRPT, 'SECUNDERABAD', 'HAKEEMPET')
+  ),
+  ["22D"].concat(
+    getStops(MNBD_SRPT, 'SECUNDERABAD', 'KOWKOOR X ROADS'),
+    "KOWKOOR", "JANAPRIYA - KOWKOOR", "MB DARGAH X ROADS", SHD[612]
+  ),
+  ["22K"].concat(
+    getStops(MNBD_SRPT, 'SECUNDERABAD', 'KOWKOOR X ROADS'),
+    "KOWKOOR", "BHARATH NAGAR - KOWKOOR", "RAJIV GRUHA KALPA - KOWKOOR"
+  ),
+
+  // 24 SERIES
+  ["24B"].concat(
+    getStops(MNBD_SRPT, 'SECUNDERABAD', 'TIRUMALAGIRI'),
+    getStops(KPHB_GTKS, 'LAL BAZAR', 'BALAJI NAGAR')
+  ),
+  ["24BA"].concat(
+    getStops(MNBD_SRPT, 'SECUNDERABAD', 'TIRUMALAGIRI'),
+    getStops(KPHB_GTKS, 'LAL BAZAR', 'AMBEDKAR NAGAR')
+  ),
+  ["24BJ"].concat(
+    getStops(MNBD_SRPT, 'SECUNDERABAD', 'TIRUMALAGIRI'),
+    getStops(KPHB_GTKS, 'LAL BAZAR', 'CHENNAPUR X ROADS'),
+    "BJR NAGAR"
   ),
 
   // 25 SERIES
@@ -406,6 +486,13 @@ let DetailedRoutesUP = [
   ["49M/250"].concat(
     getStops(LGPL_CRPL, "MEHDIPATNAM", "ASHOK NAGAR - NFC"),
     getStops(HCLX_GWRL, 'HCL X ROADS', 'ECIL X ROADS')
+  ),
+  ["49M/250D"].concat(
+    getStops(LGPL_CRPL, "MEHDIPATNAM", "ASHOK NAGAR - NFC"),
+    getStops(HCLX_GWRL, 'HCL X ROADS', 'ECIL X ROADS'),
+    getStops(SHMB_KSR, 'KUSHAIGUDA', 'NAGARAM'),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
   ),
 
   // 72 SERIES
@@ -655,6 +742,13 @@ let DetailedRoutesUP = [
     getStops(LGPL_CRPL, 'ALUGADDA BHAVI', 'ASHOK NAGAR - NFC'),
     getStops(HCLX_GWRL, 'HCL X ROADS', 'ECIL X ROADS')
   ),
+  ["250D"].concat(SHD[898],
+    getStops(LGPL_CRPL, 'ALUGADDA BHAVI', 'ASHOK NAGAR - NFC'),
+    getStops(HCLX_GWRL, 'HCL X ROADS', 'ECIL X ROADS'),
+    getStops(SHMB_KSR, 'KUSHAIGUDA', 'NAGARAM'),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
+  ),
   ["250/49"].concat(
     getStops(GWRL_HCLX, 'ECIL X ROADS', 'HCL X ROADS'),
     getStops(CRPL_LGPL, 'ASHOK NAGAR - NFC', 'GREEN LANDS'),
@@ -662,6 +756,13 @@ let DetailedRoutesUP = [
     getStops(PTCR_GTKS, 'KHAIRATHABAD', 'NAMPALLY')
   ),
   ["250/49M"].concat(
+    getStops(GWRL_HCLX, 'ECIL X ROADS', 'HCL X ROADS'),
+    getStops(CRPL_LGPL, 'ASHOK NAGAR - NFC', 'MEHDIPATNAM')
+  ),
+  ["250D/49M"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, 'NAGARAM', 'KUSHAIGUDA'),
     getStops(GWRL_HCLX, 'ECIL X ROADS', 'HCL X ROADS'),
     getStops(CRPL_LGPL, 'ASHOK NAGAR - NFC', 'MEHDIPATNAM')
   ),
@@ -865,6 +966,18 @@ let DetailedRoutesDOWN = [
     SHD[181],
     getStops(KSR_SHMB, "CITY BUS STATION", "AFZALGUNJ")
   ),
+  ["3D"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, "NAGARAM", "AFZALGUNJ")
+  ),
+  ["3DN"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, "NAGARAM", "HB COLONY"),
+    getStops(CRPL_LGPL, "NOMA", "TARNAKA"),
+    getStops(KSR_SHMB, "MANIKESHWAR NAGAR", "AFZALGUNJ")
+  ),
   ["3H"].concat(
     getStops(KSR_SHMB, "KUSHAIGUDA", "TARNAKA"),
     SHD[993],
@@ -913,6 +1026,14 @@ let DetailedRoutesDOWN = [
   // 5 Series
   ["5K"].concat(getStops(MNBD_SRPT, "MEHDIPATNAM", "SECUNDERABAD")),
   ["5K/16A"].concat(
+    getStops(HCLX_GWRL, "ECIL X ROADS", "NEW BRIDGE"),
+    getStops(IBP_DNGL, "METTUGUDA", "CHILKALGUDA X ROADS"),
+    getStops(SRPT_MNBD, "SECUNDERABAD", "MEHDIPATNAM")
+  ),
+  ["5K/16AD"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, 'NAGARAM', 'KUSHAIGUDA'),
     getStops(HCLX_GWRL, "ECIL X ROADS", "NEW BRIDGE"),
     getStops(IBP_DNGL, "METTUGUDA", "CHILKALGUDA X ROADS"),
     getStops(SRPT_MNBD, "SECUNDERABAD", "MEHDIPATNAM")
@@ -996,10 +1117,22 @@ let DetailedRoutesDOWN = [
 
   // 15 SERIES
   ["15H"].concat(
-    getStops(KSR_SHMB, "KUSHAIGUDA", "LALAPET"),
+    getStops(KSR_SHMB, 'KUSHAIGUDA', 'LALAPET'),
     SHD[917],
     SHD[719],
-    getStops(HCLX_GWRL, "LALAGUDA", "NEW BRIDGE"),
+    getStops(HCLX_GWRL, 'LALAGUDA', 'NEW BRIDGE'),
+    SHD[622],
+    SHD[23],
+    SHD[878],
+    SHD[898]
+  ),
+  ["15D"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, 'NAGARAM', 'LALAPET'),
+    SHD[917],
+    SHD[719],
+    getStops(HCLX_GWRL, 'LALAGUDA', 'NEW BRIDGE'),
     SHD[622],
     SHD[23],
     SHD[878],
@@ -1035,6 +1168,15 @@ let DetailedRoutesDOWN = [
     getStops(LGPL_CRPL, "MEHDIPATNAM", "METTUGUDA"),
     getStops(GWRL_HCLX, "NEW BRIDGE", "ECIL X ROADS")
   ),
+  ["16AD/5K"].concat(
+    getStops(MNBD_SRPT, "MEHDIPATNAM", "SANGEETH"),
+    SHD[898],
+    getStops(DNGL_IBP, "ALUGADDA BHAVI", "METTUGUDA"),
+    getStops(GWRL_HCLX, "NEW BRIDGE", "ECIL X ROADS"),
+    getStops(SHMB_KSR, "KUSHAIGUDA", "NAGARAM"),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
+  ),
   ["16H"].concat(
     getStops(KSR_SHMB, 'ECIL X ROADS', 'ZTS X ROADS'),
     "TIRUMALA NAGAR", SHD[264], "ANANDH BAGH",
@@ -1053,6 +1195,20 @@ let DetailedRoutesDOWN = [
   ),
 
   // 17 SERIES
+  ["17DH"].concat(
+    getStops(KPHB_GTKS, 'BALAJI NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, "NAGARAM", "TARNAKA"),
+    getStops(IBP_DNGL, "RAILWAY DEGREE COLLEGE", "ALUGADDA BHAVI"),
+    SHD[878],
+    SHD[898]
+  ),
+  ["17DS"].concat(
+    getStops(KPHB_GTKS, 'BALAJI NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, "NAGARAM", "TARNAKA"),
+    SHD[993],
+    SHD[641],
+    getStops(GWRL_HCLX, "SITAFALMANDI X ROADS", "SECUNDERABAD")
+  ),
   ["17H"].concat(
     getStops(KSR_SHMB, "KUSHAIGUDA", "TARNAKA"),
     getStops(IBP_DNGL, "RAILWAY DEGREE COLLEGE", "ALUGADDA BHAVI"),
@@ -1090,6 +1246,34 @@ let DetailedRoutesDOWN = [
     SHD[993],
     SHD[641],
     getStops(GWRL_HCLX, "SITAFALMANDI X ROADS", "SECUNDERABAD")
+  ),
+
+  // 22 SERIES
+  ["22"].concat(
+    getStops(SRPT_MNBD, 'HAKEEMPET', 'SECUNDERABAD')
+  ),
+  ["22D"].concat(
+    SHD[612], "MB DARGAH X ROADS", "JANAPRIYA - KOWKOOR", "KOWKOOR",
+    getStops(SRPT_MNBD, 'KOWKOOR X ROADS', 'SECUNDERABAD')
+  ),
+  ["22K"].concat(
+    "RAJIV GRUHA KALPA - KOWKOOR", "BHARATH NAGAR - KOWKOOR", "KOWKOOR",
+    getStops(SRPT_MNBD, 'KOWKOOR X ROADS', 'SECUNDERABAD')
+  ),
+
+  // 24 SERIES
+  ["24B"].concat(
+    getStops(GTKS_KPHB, 'BALAJI NAGAR', 'LAL BAZAR'),
+    getStops(SRPT_MNBD, 'TIRUMALAGIRI', 'SECUNDERABAD')
+  ),
+  ["24BA"].concat(
+    getStops(GTKS_KPHB, 'AMBEDKAR NAGAR', 'LAL BAZAR'),
+    getStops(SRPT_MNBD, 'TIRUMALAGIRI', 'SECUNDERABAD')
+  ),
+  ["24BJ"].concat(
+    "BJR NAGAR",
+    getStops(GTKS_KPHB, 'CHENNAPUR X ROADS', 'LAL BAZAR'),
+    getStops(SRPT_MNBD, 'TIRUMALAGIRI', 'SECUNDERABAD')
   ),
 
   // 25 SERIES
@@ -1188,6 +1372,13 @@ let DetailedRoutesDOWN = [
     getStops(CRPL_LGPL, 'PARADISE', 'MEHDIPATNAM'),
   ),
   ["49M/250"].concat(
+    getStops(GWRL_HCLX, 'ECIL X ROADS', 'HCL X ROADS'),
+    getStops(CRPL_LGPL, 'ASHOK NAGAR - NFC', 'MEHDIPATNAM')
+  ),
+  ["49M/250D"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, 'NAGARAM', 'KUSHAIGUDA'),
     getStops(GWRL_HCLX, 'ECIL X ROADS', 'HCL X ROADS'),
     getStops(CRPL_LGPL, 'ASHOK NAGAR - NFC', 'MEHDIPATNAM')
   ),
@@ -1438,6 +1629,21 @@ let DetailedRoutesDOWN = [
     getStops(CRPL_LGPL, 'ASHOK NAGAR - NFC', 'ALUGADDA BHAVI'),
     SHD[878], SHD[898],
   ),
+  ["250D"].concat(
+    "AMBEDKAR NAGAR CIRCLE",
+    getStops(KPHB_GTKS, 'AMBEDKAR NAGAR', 'NAGARAM X ROADS'),
+    getStops(KSR_SHMB, 'NAGARAM', 'KUSHAIGUDA'),
+    getStops(GWRL_HCLX, 'ECIL X ROADS', 'HCL X ROADS'),
+    getStops(CRPL_LGPL, 'ASHOK NAGAR - NFC', 'ALUGADDA BHAVI'),
+    SHD[878], SHD[898],
+  ),
+  ["250D/49M"].concat(
+    getStops(LGPL_CRPL, "MEHDIPATNAM", "ASHOK NAGAR - NFC"),
+    getStops(HCLX_GWRL, 'HCL X ROADS', 'ECIL X ROADS'),
+    getStops(SHMB_KSR, 'KUSHAIGUDA', 'NAGARAM'),
+    getStops(GTKS_KPHB, 'NAGARAM X ROADS', 'AMBEDKAR NAGAR'),
+    "AMBEDKAR NAGAR CIRCLE"
+  ),
   ["250/49"].concat(
     getStops(GTKS_PTCR, 'NAMPALLY', 'LAKDI KA PUL'),
     "LAKDI KA PUL (BJR CLG)",
@@ -1536,6 +1742,12 @@ let DetailedRoutesDOWN = [
     "MEHDIPATNAM"
   ),
 ]
+
+// let a = []
+// for (let i = 0; i < DetailedRoutesUP.length; i++) {
+//   a.push(DetailedRoutesUP[i][0])
+// }
+// console.log(DetailedRoutesUP.length)
 
 function getStops(a, s, d) {
   return a.slice(a.indexOf(s), a.indexOf(d) + 1);
